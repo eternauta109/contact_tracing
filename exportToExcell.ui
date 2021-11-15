@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>480</width>
-    <height>300</height>
+    <height>624</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -25,7 +25,18 @@
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="2" column="0" alignment="Qt::AlignTop">
-      <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+      <widget class="QDateTimeEdit" name="fromTime">
+       <property name="date">
+        <date>
+         <year>2021</year>
+         <month>11</month>
+         <day>11</day>
+        </date>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
      </item>
      <item row="1" column="0">
       <widget class="QLabel" name="label">
@@ -42,7 +53,18 @@
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QDateTimeEdit" name="dateTimeEdit_2"/>
+      <widget class="QDateTimeEdit" name="toTime">
+       <property name="date">
+        <date>
+         <year>2021</year>
+         <month>11</month>
+         <day>13</day>
+        </date>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -59,6 +81,67 @@
      <string>export to excell</string>
     </property>
    </widget>
+   <widget class="QWidget" name="gridLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>289</y>
+      <width>451</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QTableWidget" name="tablewdg">
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <column>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>date</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>time</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>codice fiscale</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ticket</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>numero ingressi</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -66,7 +149,7 @@
      <x>0</x>
      <y>0</y>
      <width>480</width>
-     <height>18</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
